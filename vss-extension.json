@@ -1,0 +1,39 @@
+{
+  "manifestVersion": 1,
+  "id": "delivery-forecast",
+  "publisher": "Kluz",
+  "version": "1.0.0",
+  "name": "Delivery Forecast",
+  "description": "An extension to help with forecasting the delivery of work items",
+  "public": false,
+  "categories": [ "Azure Repos" ],
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services"
+    }
+  ],
+  "contributions": [
+    {
+      "id": "my-hub",
+      "type": "ms.vss-web.hub",
+      "targets": [
+        "ms.vss-code-web.code-hub-group"
+      ],
+      "properties": {
+        "name": "My Hub",
+        "uri": "my-hub.html"
+      }
+    }
+  ],
+  "files": [
+    {
+      "path": "index.html",
+      "addressable": true
+    },
+    {
+      "path": "node_modules/vss-web-extension-sdk/lib",
+      "addressable": true,
+      "packagePath": "lib"
+    }
+  ]
+}
